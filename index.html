@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTI emulator</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="Sound_23081.mp3" loop id="audioDDD"></audio>
+    <div id="intiSettings">
+        <span class="intiSettingsHeaderText">Ваша формула</span>
+        <mjx-container class="MathJax CtxtMenu_Attached_0" style="color: white; margin-top: 60px;" jax="CHTML" display="true" tabindex="0" ctxtmenu_counter="0" style="font-size: 101.2%; position: relative;"><mjx-math display="true" class="MJX-TEX" aria-hidden="true" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><span id="UserFormulaINTITimeValue">10</span></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-munder space="4"><mjx-row><mjx-base style="padding-left: 0.706em;"><mjx-mo class="mjx-n"><mjx-c class="mjx-c6C"></mjx-c><mjx-c class="mjx-c69"></mjx-c><mjx-c class="mjx-c6D"></mjx-c></mjx-mo></mjx-base></mjx-row><mjx-row><mjx-under style="padding-top: 0.167em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D441 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-under></mjx-row></mjx-munder><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><span id="userFormulaINTIStartValue">2</span></mjx-mn><mjx-mtext class="mjx-n"><mjx-c class="mjx-cA0"></mjx-c></mjx-mtext><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3">+, -, ⋅, ÷</mjx-mo><mjx-mi class="mjx-i" space="3"><span id="userFormulaINTINEndValue">n</span></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>I</mi><mi>N</mi><mi>T</mi><mi>I</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><munder><mo data-mjx-texclass="OP" movablelimits="true">lim</mo><mrow data-mjx-texclass="ORD"><mi>t</mi><mo accent="false" stretchy="false">→</mo><mi>I</mi><mi>N</mi><mi>T</mi><mi>I</mi></mrow></munder><mi>i</mi><mi>n</mi><mi>i</mi><mi>t</mi><mo>=</mo><mn>2</mn><mtext>&nbsp;</mtext><mo stretchy="false">(</mo><mi>i</mi><mi>n</mi><mi>t</mi><mi>i</mi><mo>⋅</mo><mi>n</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container>
+        <br><span class="textSettings">INTI конечное время (миллисекунды)</span>
+        <br><br><input type="number" id="userFormulaFirstNumberTime" oninput="enterUserFormulaFirstNumberTime()" placeholder="10000" class="inputSettings"><input type="checkbox" id="useUnfinityCheckInp" onclick="useInfinityEndTime()" style="margin-left: 10px;"><span style="color: white; font-family: Arial, Helvetica, sans-serif;">∞</span>
+        <br><br><span class="textSettings">Изначальное значение inti</span>
+        <br><br><input type="number" id="userFormulaFirstNumberINTIStartValue" oninput="enterUserFormulaFirstNumberINTIStartValue()" placeholder="2" class="inputSettings">
+        <br><br><span class="textSettings">Значение <b>n</b> (по умолчанию 0)</span>
+        <br><br><input type="number" id="userFormulaNValue" oninput="enterUserFormulaNValue()" class="inputSettings">
+        <br><br><button class="buttonSettingsStartSimulation" onclick="getInputValue()">Запустить симуляцию</button>
+    </div>
+    <div id="intiHighBackground-container">
+
+    </div>
+    <script src="script/inti.js"></script>
+</body>
+</html>
